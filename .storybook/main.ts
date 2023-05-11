@@ -1,7 +1,8 @@
-import type { StorybookConfig } from "@storybook/nextjs";
+// import type { StorybookConfig } from "@storybook/nextjs";
 
-const config: StorybookConfig = {
-  stories: ["../src/**/*.mdx",
+const path = require('path');
+const config = {
+  stories: [
    "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
@@ -12,8 +13,9 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
+  core: {
+    builder: 'webpack5',
   },
+  outputDir: '../storybook-static',
 };
 export default config;

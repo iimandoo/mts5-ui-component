@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": true,
     "main": "dist",
-    "type": "module",
     "repository": "https://github.com/iimandoo/mts5-ui-component",
     "publishConfig": {
         "@iimandoo:registry": "https://npm.pkg.github.com"
@@ -14,7 +13,7 @@
         "start": "next start",
         "lint": "next lint",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build -s public"
     },
     "dependencies": {
         "@types/node": "20.1.2",
