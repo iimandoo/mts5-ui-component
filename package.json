@@ -1,7 +1,6 @@
 {
     "name": "@iimandoo/mts5-ui-component",
     "version": "0.1.0",
-    "private": true,
     "main": "dist",
     "repository": "https://github.com/iimandoo/mts5-ui-component",
     "publishConfig": {
